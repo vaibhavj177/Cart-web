@@ -20,7 +20,9 @@ const app = initializeApp(firebaseConfig);
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App 
+      db={app}
+    />
   </React.StrictMode>,
   document.getElementById('root')
 );
